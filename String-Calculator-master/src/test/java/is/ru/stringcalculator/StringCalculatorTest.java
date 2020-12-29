@@ -62,4 +62,9 @@ public class StringCalculatorTest {
     public void testOverThousand(){
     	assertEquals(2, StringCalculator.add("1001,2"));
     }
+	
+	@Test
+    public void testOtherDelimiter(){
+    	assertEquals(11, StringCalculator.add("//;\n5;6"));
+    }
 }
