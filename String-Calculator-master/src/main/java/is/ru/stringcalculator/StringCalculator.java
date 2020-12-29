@@ -29,7 +29,7 @@ public class StringCalculator {
 				else
 					ifNegativeString += ("," + number);
 			}
-			if (Integer.parseInt(number) < 1000)
+			if (Integer.parseInt(number) <= 1000)
 				totalSum += Integer.parseInt(number);
 		}
 
