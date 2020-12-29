@@ -49,5 +49,12 @@ public class StringCalculatorTest {
 		catch (IllegalArgumentException e){
 			assertEquals(e.getMessage(), "Negatives not allowed: -4,-5");
 		}
+		
+		try {
+			StringCalculator.add("5,4,-3,-2");
+		}
+		catch (IllegalArgumentException e){
+			assertEquals(e.getMessage(), "Negatives not allowed: -3,-2");
+		}
     }
 }
